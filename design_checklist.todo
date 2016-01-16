@@ -1,0 +1,131 @@
+External File Organization
+
+  ☐ Consolidated Assets
+
+  ☐ Named Files Appropriately
+
+  ☐ Assets are Relative to Comp File
+
+  ☐ UI Elements Templated
+
+  ☐ Internal File Organization
+
+  ☐ Layers Named Appropriately & Semantically
+
+  ☐ Organized Modules within Folders
+
+  ☐ Deleted Unwanted Layers
+
+  ☐ Globalized Common Elements
+
+  ☐ Used Smart Objects (if Allowed)
+
+  ☐ Included module states on separate layers and properly labeled
+
+  (i.e. Link Hovered, Window Scrolled)
+
+Design Practices
+
+  ☐ Color profile set as RGB
+
+  ☐ Comp Contains Whole Pixel Values
+
+  ☐ Created a Grid and Included Guides for Grid System
+
+  (also consider sharing guideguide settings across teams)
+
+  ☐ Fallback Interactions for Hover Based Events
+
+  ☐ Used Dropshadows Sparingly
+
+  ☐ Used Licensed Icons/Photos
+
+  ☐ Appropriate Favicons Created 
+
+  (Favicons appear in the tab of your browser in order to help identify. Favicons render in the browser tab at 16 x 16 and as large as 144 x 144 for apple icons)
+
+Filters
+
+  ☐ Overlays Are Appropriate and used Sparingly
+
+  ☐ CSS Support has been considered and researched
+
+Typography
+
+  ☐ Web Font Kit < 250k
+
+  ☐ Font-sizes smaller than 14-16px render well and are hinted properly for the Web
+
+  ☐ (Web Font Specimen)
+
+  ☐ Licensed Fonts Made Available
+
+  ☐ Unchecked Paragraph Hyphenation
+
+  ☐ Documentation Outlining Typographic Scale/Styles
+
+  ☐ Equivalent Web Fonts Listed
+
+  (If comp fonts are not available through a Web Font service.)
+
+Images
+
+  ☐ Shapes Aren't Stretched
+
+  ☐ Masks Globalized
+
+  ☐ Vectors Processed as Smart Objects
+
+  ☐ Created Various Desired Resolutions
+
+  ☐ (Read More about Picturefill)
+
+Vector
+
+  ☐ Create Separate Artboards
+
+  ☐ Combine Paths and Unite with Pathfinder
+
+  ☐ Combine Strokes
+
+  ☐ Avoided 3D Effects, Blurs, Blend Modes and Drop- Shadows
+
+  ☐ Small Proportions Make Sense 
+
+  ☐ Exported and saved as SVG
+
+  ☐ (following these steps)
+
+  ☐ Before Exporting
+
+Proofread
+
+  ☐ Compare Against Mockups/Wireframes
+
+  ☐ Account for All Images
+
+  ☐ Verified Browser Compatibility
+
+  ☐ Consistency Check
+
+  ☐ Packaged fonts as a .zip
+
+  ☐ Clean up unused and nested layers
+
+  ☐ Packaged comp as a .zip
+
+  (lowers the file size for developers to download)
+
+  ☐ Included Favicons
+
+  (Favicons appear in the tab of your browser in order to help identify and add a touch of flare to a site. Favicons render in the browser tab at 16 x 16 and as large as 144 x 144 for apple icons)
+
+Exporting
+
+  ☐ Save for Web & Devices
+
+  ☐ Choose Progressive
+
+  ☐ Conserve File Size
+
+  ☐ Export as RGB Color Profile.

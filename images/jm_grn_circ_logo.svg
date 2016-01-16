@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="179px" height="177px" viewBox="0 0 179 177" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="101.804786%" y1="-16.4791831%" x2="48.2310623%" y2="80.2981606%" id="linearGradient-1">
+            <stop stop-color="#EEEEEE" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="9" in="SourceAlpha" operator="dilate" result="shadowSpreadInner1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadInner1" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.287 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="3" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-6" sketch:type="MSArtboardGroup">
+            <g id="Oval-3-+-Path-9-+-Path-10-+-M" sketch:type="MSLayerGroup" transform="translate(10.000000, 9.000000)">
+                <circle id="Oval-3" stroke="#8FC190" stroke-width="12" fill="url(#linearGradient-1)" filter="url(#filter-2)" sketch:type="MSShapeGroup" cx="79" cy="79" r="79"></circle>
+                <g id="Path-9-+-Path-10" transform="translate(8.000000, 52.000000)" stroke="#979797" sketch:type="MSShapeGroup">
+                    <path d="M0.40234375,2.31445313 C27.59375,1.65364583 54.7851562,0.992838542 81.9765625,0.33203125" id="Path-9" stroke-width="11"></path>
+                    <path d="M43.9199219,1.703125 C45.7685693,16.5786116 49.7571204,44.0916419 47.9941406,57.0175781 C45.8144058,72.9991076 26.4745818,82.222929 16.1425781,67.7578125 C8.4723467,57.0192574 10.5216019,53.0614159 10.2167969,39.9804687" id="Path-10" stroke-width="19"></path>
+                </g>
+                <text id="M" fill="#4A4A4A" filter="url(#filter-3)" sketch:type="MSTextLayer" font-family="Avenir" font-size="111" font-weight="686" sketch:alignment="middle" letter-spacing="6.11556149">
+                    <tspan x="52" y="131" fill="#514F4F">M</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

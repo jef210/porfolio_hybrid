@@ -1,0 +1,311 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/*============== STRUCTURE ================*/
+
+body {
+    /*background-color: ghostwhite;*/
+    color: black;
+    font-family: arial;
+    margin: 0;
+}
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+.row {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    border-bottom: 3px solid black;
+}
+/* ================ TYPEFACE =================*/
+
+h1 {
+    
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: darkslategrey;;
+}
+a:hover {
+    color: slategrey;
+}
+
+
+/* ============= NAVBAR ==================*/
+
+#navbar-brand-top {
+    color: black;
+}
+.navbar-default .navbar-nav>li>a {
+    color: darkslategrey;
+    margin-top: 24px;
+    font-size: 1.2em;
+    /*background-color: transparent;*/
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: slategrey;
+}
+.navbar {
+    border-bottom: 5px solid darkslategrey;
+    background-color: hsla(187,52%,80%, .8); 
+    height: 70px;
+
+}
+.navbar-default .navbar-toggle .collapse {
+  border-color: #563D7C;
+  background-color: black;
+}
+
+
+.navbar-header h1 {
+    font-size: 30px;
+    margin-top: 15px;
+
+}
+/* ================= NAV MEDIA QUERIES ==================*/
+@media (max-width: 600px){
+    .navbar-brand h1 {
+        font-size: 22px;
+        margin-top: 25px
+    }
+    .navbar-brand img {
+        width: 100%;
+        height: auto;
+    }
+    .nav-custom {
+    background-color: ghostwhite;
+    opacity: .9;
+    border: transparent;
+
+}
+}
+/*.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #563D7C;
+}*/
+button.navbar-toggle {
+    opacity: .9;
+    margin-top: 20px;
+}
+
+#about-wheel {
+    max-height: 60px;
+    max-width: 60px;
+    margin-top: -10px;
+    display: inline-block;
+    float: left;
+}
+.navbar-default .navbar-text {
+    margin-top: 10px;
+    display: inline-block;
+    color: darkslategrey
+}
+#contact {
+    color: black;
+}
+.contact { 
+    border-radius: 5px;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0px;   
+}
+
+.section-box {
+    background-color: hsla(187,52%,80%, .8); 
+    border-radius: 5px;
+    border: 3px solid grey;
+    overflow: auto;
+}
+.section-box:hover {
+    background-color: hsla(187,52%,80%, 1); 
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+.section-box a {
+    color: black;
+}
+
+
+.section_header h1 {
+    margin-top: -10px;
+}
+
+/*.top-box {
+    margin: 0 auto;
+    margin-top: 32px;
+    color: black;
+    /*padding: 50px;
+    text-align: center;
+}*/
+
+.landing-box {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-color: powderblue;
+    background-image: url(images/pastel-mtn-lines-1.png);
+    background-size: 150% 600px;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.about_section {
+    margin: 0 auto;
+    background-color: lightgrey
+}
+
+.jm_logo_top {
+    width: 80%;
+    height: 298px;
+    background-image: url(images/jm_grn_circ_logo.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    left: 50%;
+    margin-left: -70%; 
+    top: 20%;
+    margin-top: 90px;
+}
+
+.shape-group {
+    height: 100em;
+    width: 70%;
+    background-image: url(images/shape-group1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 40%;
+    /*margin-top: 40%; */
+    right: 50%;
+    margin-right: -40%;
+  
+}
+
+.about_img {
+    margin-bottom: 100px; 
+}
+.about_img figure {
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 1.6s ease-in-out;
+    overflow: hidden;
+    cursor: pointer; 
+}
+.about_img figure.is-showing {
+    opacity: 1;
+    transform: translateX(0px); 
+}
+.about_img figure img {
+    display: block;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out; 
+}
+.about_img figure:hover figcaption {
+    left: 0%; 
+}
+.about_img figure:hover img {
+    transform: scale(1.1); 
+}
+.about_img figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    background: red;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 1s ease-in-out; 
+}
+   
+
+.left_image_top {
+    width: 40%;
+    height: 40%;
+    float: right;
+
+}
+
+.what_i_do_section { 
+    margin: 0 auto;
+}
+
+.what_i_do_section img {
+    margin-left: 5px;
+}
+
+
+/* makes it so page sections line up to the top of the page */
+.line-up-id-click { 
+border-top: 50px solid transparent;
+margin-top: -50px;
+-webkit-background-clip: padding box;
+-moz-background-clip: padding;
+background-clip: padding-box;
+}
+
+#footer{
+    padding: 30px;
+}
+
+.footer-section {
+    background-color: lightgrey;
+    margin: 0 auto;
+    text-align: center;
+}
