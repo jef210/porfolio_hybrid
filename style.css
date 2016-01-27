@@ -47,10 +47,11 @@ summary {
 /*============== STRUCTURE ================*/
 
 body {
-    /*background-color: ghostwhite;*/
+    background-color: lightgrey;
     color: black;
     font-family: arial;
     margin: 0;
+
 }
 .container {
     margin: 0px;
@@ -70,8 +71,9 @@ h1 {
     
 }
 img {
-    width: 100%;
-    height: auto;
+   /* width: 100%;
+    height: auto;*/
+    margin: 0 auto;
 }
 
 a {
@@ -80,6 +82,20 @@ a {
 a:hover {
     color: slategrey;
 }
+
+
+
+/*============ FUNCTIONAL STUFFS ================*/
+
+/* makes it so page sections line up to the top of the page */
+.line-up-id-click { 
+border-top: 50px solid transparent;
+margin-top: -50px;
+-webkit-background-clip: padding box;
+-moz-background-clip: padding;
+background-clip: padding-box;
+}
+
 
 
 /* ============= NAVBAR ==================*/
@@ -158,9 +174,13 @@ button.navbar-toggle {
     border-radius: 5px;
 }
 
+/*helps style the revealed footer with z-index*/
 .content {
     margin: 0 auto;
-    padding: 0px;   
+    padding: 0px;
+    position: relative;
+    z-index: 2;
+    background-color: white;   
 }
 
 .section-box {
@@ -183,30 +203,25 @@ button.navbar-toggle {
     margin-top: -10px;
 }
 
-/*.top-box {
-    margin: 0 auto;
-    margin-top: 32px;
-    color: black;
-    /*padding: 50px;
-    text-align: center;
-}*/
+
+.fixed_bkgrnd {
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-position: top center;
+    
+}
 
 .landing-box {
-    position: relative;
     height: 600px;
     width: 100%;
     background-color: powderblue;
     background-image: url(images/pastel-mtn-lines-1.png);
     background-size: 150% 600px;
-    background-position: top center;
-    background-attachment: fixed;
-    overflow: hidden;
+/*z-index covers the revealed footer*/
+    z-index: 2;
 }
 
-.about_section {
-    margin: 0 auto;
-    background-color: lightgrey
-}
 
 .jm_logo_top {
     width: 80%;
@@ -236,26 +251,34 @@ button.navbar-toggle {
   
 }
 
+.about_section {
+    margin: 0 auto;
+    background-color: turquoise;
+    z-index: 2;
+}
+
 .about_img {
-    margin-bottom: 100px; 
+    margin: 0 auto;
 }
 .about_img figure {
-    margin-bottom: 20px;
+    margin-top: 40px;
     position: relative;
     opacity: 0;
     transform: translateX(80px);
     transition: all 1.6s ease-in-out;
     overflow: hidden;
     cursor: pointer; 
+    height: 20%;
+    width: 90%;
 }
 .about_img figure.is-showing {
     opacity: 1;
-    transform: translateX(0px); 
+    transform: translateX(-20px); 
 }
 .about_img figure img {
     display: block;
     transform: scale(1);
-    transition: all 0.3s ease-in-out; 
+    transition: all 1s ease-in-out; 
 }
 .about_img figure:hover figcaption {
     left: 0%; 
@@ -263,49 +286,91 @@ button.navbar-toggle {
 .about_img figure:hover img {
     transform: scale(1.1); 
 }
-.about_img figcaption {
+/*.about_img figcaption {
     position: absolute;
     bottom: 10px;
-    left: -100%;
+    left: 50%;
     background: red;
     color: white;
     padding: 2px 8px;
     font-size: 11px;
     transition: all 1s ease-in-out; 
-}
+}*/
    
 
-.left_image_top {
-    width: 40%;
-    height: 40%;
-    float: right;
 
+
+/*Posts from Parallax stuff*/
+.blog_section {
+    background-image: url(images/shape-group1.svg);
+    background-color: lightblue;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: 150% 600px;
+    background-repeat: no-repeat;
 }
 
-.what_i_do_section { 
+.blog-posts {}
+.post {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 20px 20px 0;
+    background: white;
+    position: relative; 
     margin: 0 auto;
+    text-align: center; 
+
+}
+.post h5 {
+    text-align: left;
 }
 
-.what_i_do_section img {
-    margin-left: 5px;
+.post img {
+    height: 70%;
+    width: 70%;
+}
+.post-1 {
+    transform: translate(100px, 20px); 
+}
+/*.post-2 {
+    z-index: 2;
+    transform: translate(0px, 0px);
+}*/
+.post-3 {
+    transform: translate(-100px, 20px); 
 }
 
 
-/* makes it so page sections line up to the top of the page */
-.line-up-id-click { 
-border-top: 50px solid transparent;
-margin-top: -50px;
--webkit-background-clip: padding box;
--moz-background-clip: padding;
-background-clip: padding-box;
+
+.bottom_section {
+    margin-bottom: 180px;
 }
+
+
 
 #footer{
     padding: 30px;
 }
 
-.footer-section {
-    background-color: lightgrey;
+footer {
+    background-color: black;
     margin: 0 auto;
     text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0px;
+    /*z-index: 0;*/
+}
+
+.footer_stuff {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+footer ul {
+    list-style: none;
+
 }
