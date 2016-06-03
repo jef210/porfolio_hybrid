@@ -222,8 +222,8 @@ button.navbar-toggle {
     z-index: 2;
 }
 
-
 .jm_logo_top {
+    will-change: transform;
     width: 80%;
     height: 298px;
     background-image: url(images/jm_grn_circ_logo.svg);
@@ -237,6 +237,7 @@ button.navbar-toggle {
 }
 
 .shape-group {
+    /*will-change: transform;*/
     height: 100em;
     width: 70%;
     background-image: url(images/shape-group1.svg);
@@ -260,7 +261,9 @@ button.navbar-toggle {
 .about_img {
     margin: 0 auto;
 }
+
 .about_img figure {
+    will-change: transform;
     margin-top: 40px;
     position: relative;
     opacity: 0;
@@ -312,7 +315,9 @@ button.navbar-toggle {
 }
 
 .blog-posts {}
+
 .post {
+    will-change: transform;
     border: 1px solid #e1e1e1;
     border-radius: 10px;
     padding: 20px 20px 0;
